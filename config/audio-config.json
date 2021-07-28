@@ -1,0 +1,55 @@
+{
+    "sections": [
+        {
+            "source": 0
+        },
+        {
+            "source": 1
+        },
+        {
+            "source": 2,
+            "end": -17.2,
+            "silentAfter": 30
+        },
+        {
+            "source": 2,
+            "end": -17.2,
+            "silentAfter": 60
+        },
+        {
+            "source": 2,
+            "start": -7.2
+        },
+        {
+            "source": 3
+        },
+        {
+            "source": 4,
+            "end": -7.2
+        },
+        {
+            "source": 4,
+            "end": -17.2,
+            "silentAfter": 30
+        },
+        {
+            "source": 4,
+            "start": -7.2
+        },
+        {
+            "source": 5
+        },
+        {
+            "source": 6,
+            "end": -27.2
+        },
+        {
+            "source": 6
+        }
+    ],
+    "metadata": {
+        "artist": "Sundai",
+        "album": "Unknown",
+        "comments": "Unknown"
+    }
+}

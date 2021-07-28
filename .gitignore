@@ -1,0 +1,6 @@
+*.pyc
+*.mp3
+
+.devcontainer
+docker-compose.yml
+Dockerfile
