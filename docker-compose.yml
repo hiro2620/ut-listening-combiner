@@ -1,0 +1,8 @@
+version: "3"
+services:
+    app:
+        build: .
+        volumes: 
+            - "./config:/app/config"
+            - "./mp3:/app/mp3"
+            - "./out:/app/out"

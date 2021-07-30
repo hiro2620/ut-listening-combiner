@@ -2,21 +2,34 @@
 
 青本や実戦模試の東大英語のリスニング音源を本番と同じ形式の
 1つのファイルに結合できるプログラムです。
-Pythonで動作します。
+ローカルのPythonまたはdocker-composeで実行できます。
 
 ## セットアップ
-### 1. ダウンロード
+### 共通
+#### 0. ダウンロード
     git clone https://github.com/hiro2620/ut-listening-combiner
     cd ut-listening-combiner
 
-### 2. ffmpegをインストールして、使えることを確認
-    ffmpeg -version
+### docker-composeを使う場合
+#### 1. ダウンロード
+    git clone https://github.com/hiro2620/ut-listening-combiner
+    cd ut-listening-combiner
 
-### 3-1. (必要なら)仮想環境を作成
+#### 2. ビルド
+    docker-compose build
+
+### Dockerを使わない場合
+#### 1. ffmpegをインストール
+インストール方法はOSにより異なります。
+    ffmpeg -version
+    # ffmpeg version 4.1.6-1~deb10u1 Copyright (c) 2000-2020 the FFmpeg developers
+    # built with gcc 8 (Debian 8.3.0-6)
+
+#### 2-1. (必要なら)仮想環境を作成
     python -m venv env
     . ./env/bin/activate
 
-### 3-2. 依存ライブラリをインストール
+#### 2-2. 依存ライブラリをインストール
     pip install -r requirements.txt
 
 
@@ -55,10 +68,18 @@ Pythonで動作します。
 変更できます。
 
 ### 2. 実行
-    python3 ./src/main.py
+#### Dockerを使う場合
+    docker-compose up
+
+#### Dockerを使わない場合
+    cd src
+    python3 main.py
 ファイルは`./out.mp3`に保存されます。
 
 
 ## 動作確認環境
-- Ubuntu 20.04 LTS x64
+- Ubuntu 20.04.2 LTS x86_64
 - Python 3.9.6
+- ffmpeg 4.1.6-1
+- Docker 20.10.7, build f0df350
+- docker-compose 1.25.5, build 8a1c60f6

@@ -1,0 +1,7 @@
+Dockerfile
+docker-compose.yml
+LICENCE
+README.md
+*.mp3
+.devcontainer
+.gitignore

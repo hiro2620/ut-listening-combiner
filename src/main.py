@@ -12,7 +12,7 @@ logger.setLevel(WARNING)
 CONFIG_FILE_PATH = "../config/audio-config.json"
 SRC_FILE_DIR = "../mp3"
 
-OUT_FILE_PATH = "../out.mp3"
+OUT_FILE_PATH = "../out/out.mp3"
 
 
 class AudioCombiner():
