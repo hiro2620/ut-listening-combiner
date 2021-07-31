@@ -21,6 +21,7 @@
 ### Dockerを使わない場合
 #### 1. ffmpegをインストール
 インストール方法はOSにより異なります。
+
     ffmpeg -version
     # ffmpeg version 4.1.6-1~deb10u1 Copyright (c) 2000-2020 the FFmpeg developers
     # built with gcc 8 (Debian 8.3.0-6)
