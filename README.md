@@ -11,11 +11,7 @@
     cd ut-listening-combiner
 
 ### docker-composeを使う場合
-#### 1. ダウンロード
-    git clone https://github.com/hiro2620/ut-listening-combiner
-    cd ut-listening-combiner
-
-#### 2. ビルド
+#### 1. ビルド
     docker-compose build
 
 ### Dockerを使わない場合
